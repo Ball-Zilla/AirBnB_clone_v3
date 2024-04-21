@@ -2,7 +2,6 @@
 """
 Contains the class DBStorage
 """
-
 import models
 from models.amenity import Amenity
 from models.base_model import BaseModel, Base
@@ -95,7 +94,7 @@ class DBStorage:
             cls = classes[cls]
             total = len(models.storage.all(cls).values())
 
-        elif cls = None:
+        elif cls == None:
             for value in classes.values():
                 total += len(models.storage.all(value).values())
 
